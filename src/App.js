@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import InputForm from "./components/InputForm";
+import DocumentPreview from "./components/DocumentPreview";
+import DocumentGenerator from "./components/DocumentGenerator";
 
 function App() {
+  const [chargebackData, setChargebackData] = useState([]);
+
+  const addData = (newData) => {
+    setChargebackData([...chargebackData, newData]);
+  };
+
+  const updateData = (index, updatedData) => {
+    const newData = chargebackData.map((data, i) =>
+      i === index ? updatedData : data
+    );
+    setChargebackData(newData);
+  };
+
+  const removeData = (index) => {
+    const newData = chargebackData.filter((_, i) => i !== index);
+    setChargebackData(newData);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Chargeback Document Generator</h1>
+      <InputForm addData={addData} />
+      <DocumentPreview
+        chargebackData={chargebackData}
+        updateData={updateData}
+        removeData={removeData}
+      />
+      <DocumentGenerator chargebackData={chargebackData} />
     </div>
   );
 }
