@@ -1,0 +1,28 @@
+[
+  {
+    "caseNumber": "2024271020577",
+    "merchantNumber": "XXXXXXXXXX101493",
+    "amount": 29.95,
+    "cardBrand": "Mastercard",
+    "last4CC": "2055",
+    "originalRef": "9876023617",
+    "transDate": "2024-08-30",
+    "respondByDate": "2024-10-09",
+    "reasonCode": "4837",
+    "reasonDescription": "Unauthorized charge. Provide a signed and imprinted or magswiped sales ticket; or copy of order form/invoice, along with evidence of positive AVS.",
+    "resolutionMessage": "Unauthorized charge. Provide a signed and imprinted or magswiped sales ticket; or copy of order form/invoice, along with evidence of positive AVS."
+  },
+  {
+    "caseNumber": "2024271020212",
+    "merchantNumber": "XXXXXXXXXX101493",
+    "amount": 29.95,
+    "cardBrand": "Visa",
+    "last4CC": "9779",
+    "originalRef": "9899528825",
+    "transDate": "2024-09-04",
+    "respondByDate": "2024-10-09",
+    "reasonCode": "10.4",
+    "reasonDescription": "Unauthorized charge. Supply invoice or order form, evidence of positive AVS response received and proof of delivery to the AVS confirmed address.",
+    "resolutionMessage": "Unauthorized charge. Supply invoice or order form, evidence of positive AVS response received and proof of delivery to the AVS confirmed address."
+  }
+]

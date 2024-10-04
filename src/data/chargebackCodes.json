@@ -1,0 +1,14 @@
+{
+  "chargebackCodes": [
+    {
+      "code": "4837",
+      "description": "No Cardholder Authorization",
+      "resolution": "Unauthorized charge. Provide a signed and imprinted or magswiped sales ticket; or copy of order form/invoice, along with evidence of positive AVS."
+    },
+    {
+      "code": "10.4",
+      "description": "Fraud Card Absent Environment",
+      "resolution": "Unauthorized charge. Supply invoice or order form, evidence of positive AVS response received and proof of delivery to the AVS confirmed address."
+    }
+  ]
+}
